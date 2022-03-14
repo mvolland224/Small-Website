@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	background:#0000;
+	font-family:'Lora', serif;
+	font-weight: 200;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header{
+	background: #55d6aa;
+}
+/* setting up the background  */
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.logo{
+	float: left;
+	width: 10px 0;
+}
+
+nav{
+	float: right;
+}
+
+nal ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* nav bar: distance from top and from each other The position keeps the bar from going too far*/
+nav li{
+	display: inline-block;
+	margin: 0 35px;
+	padding-top: 25px;
+	
+	position: relative;
+}
+/* word color, type, and size in nav bar*/
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	
+}
+/* color that appears when you hover over the words in the navigation bar*/
+nav a:hover{
+	color:#000;
+}
+
+/* creates bar over navigation words and dictates how long bar takes to appear*/
+nav a::before{
+	content:'';
+	display: block;
+	height: 5px;
+	
+	background-color:#444;
+	
+	position: absolute;
+	top: 0;
+	width: 0%;
+	
+	transition:all ease-in-out 250ms;
+}
+/* width of bar hovering over navigation*/
+nav a:hover::before{
+	width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1em;
+  color: #009;
+  margin-bottom: .3em;
+
+}
+
+h3 {
+	text-align: center;
+}
+
+
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+input[type=submit] {
+	background: #64B5F6;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+*:focus {
+	outline: 0;
+}
+
+/* Changes the current nav color to green upon hover */
+.active {
+  background-color: #04AA6D;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  background-color:  #333;
+}
+.footer-text-left {
+  font-size:25px;
+  padding-left:40px;
+  float:left;
+  word-spacing:20px;
+}
+
+a.menu:hover {
+  background-color:yellow;
+  font-size:20px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
